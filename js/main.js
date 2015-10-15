@@ -145,17 +145,17 @@ $(function(){
 	
 	  var swiper = new Swiper('#main_content', {
         pagination: '.swiper-pagination',
-        direction: 'vertical',
+        direction: 'vertical',  // 水平翻转：horizontal
         slidesPerView: 1,
         mousewheelControl: true,
-		speed : 1000,
+		speed : 300,   //3D切换时速度设为300为佳，普通切换设为1000左右
 		grabCursor: true,
 		longSwipesRatio : 0.3,
 		//3D翻转
 		effect : 'cube',
 		cube: {
-		  slideShadows: true,
-		  shadow: true,
+		  slideShadows: false,
+		  shadow: false,
 		  shadowOffset: 100,
 		  shadowScale: 0.6
 		},
@@ -234,8 +234,10 @@ $(function(){
 			  
 			  if (curPage == 11) {
 				  $(".m12,.m13,.m14").show()
+				  $(".down").fadeOut()
 			  } else {
 				  $(".m12,.m13,.m14").fadeOut()
+				  $(".down").fadeIn()
 			  }
 			  
 		  }
