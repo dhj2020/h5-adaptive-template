@@ -1,6 +1,6 @@
 # h5-adaptive-template
 
-//自适应方法二
+//自适应方法2
 
 ```
 scaleW=window.innerWidth/640;
